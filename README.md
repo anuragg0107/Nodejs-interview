@@ -68,3 +68,34 @@ console.log('4');</code></pre>
 
 <h2>9. What is a Thread Pool?</h2>
 <p>Basically, a thread pool is a pre-installed set of threads. It has a fixed number of threads (by default, 4) and can go up to 8.</p>
+
+<h2>10. Difference between Http and Https?</h2>
+<p>HTTP (Hyper Text Transfer Protocol) and HTTPS (Hyper Text Transfer Protocol Secure) are protocols for data communication.</p>
+<p><strong>Key Differences:</strong></p>
+<p>- HTTPS is more secure than HTTP.</p>
+<p>- HTTPS files are encrypted with an SSL certificate, whereas HTTP does not use SSL. This means HTTP is more vulnerable to interception and data breaches.</p>
+
+<h2>11. What is a URL?</h2>
+<p>URL (Uniform Resource Locator) is an address used to visit a website.</p>
+<p><strong>Example:</strong> https://nodejs.org/</p>
+<p>1) <code>https</code>: Protocol</p>
+<p>2) <code>nodejs.org</code>: Domain Name</p>
+<p>3) <code>/</code>: Path (e.g., home, about, contact us, features, etc.)</p>
+<p><strong>Nested Path:</strong> https://nodejs.org/about/1</p>
+<p><strong>Query Parameter:</strong> https://nodejs.org/about?userid=1&a=2</p>
+
+<h2>12. Explain GET, POST, PUT, PATCH, DELETE methods?</h2>
+<p><strong>GET:</strong> Used to request data from the server.</p>
+<p>Example: www.youtube.com/search</p>
+
+<p><strong>POST:</strong> Used to send data to the server.</p>
+<p>Example: Filling out a signup form.</p>
+
+<p><strong>PUT:</strong> Used to update the entire profile with new details.</p>
+<p>Example: Updating an image and other profile details.</p>
+
+<p><strong>PATCH:</strong> Used to update specific parts of a profile (e.g., just the bio).</p>
+<p>Example: Updating only the mobile number or name.</p>
+
+<p><strong>DELETE:</strong> Used to delete something.</p>
+<p>Example: Deleting a specific item.</p>
