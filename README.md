@@ -108,3 +108,57 @@ console.log('4');</code></pre>
 <p><strong>Cookies:</strong> Cookies are small pieces of data that websites store on your computer or device when you visit them.</p>
 <p>They help the website remember information about you, like your login details, preferences, or what's in your shopping cart.</p>
 <p>his way, when you visit the website again, it can provide a more personalized experience without asking for the same information every time. <strong>Size Limit :</strong> 4 kb. </p>
+
+<h2>13. Explain Middleware?</h2>
+<p>Middleware is an helper or mideator to do some work on user requrest before reach to final destination.</p>
+<h2>Understanding Express Middleware: A Simple Analogy</h2>
+
+<h3>Imagine This Scenario:</h3>
+
+<p><strong>A Visitor at the Door:</strong> Picture your Express app as a house. A visitor (user) arrives and knocks on the door (makes a request).</p>
+
+<p><strong>Security Check (Middleware 1):</strong> The first thing that happens is a security guard (the first middleware) checks the visitor’s ID (logs the request details). Once the check is complete, the guard allows the visitor to proceed.</p>
+
+<p><strong>Coat Room (Middleware 2):</strong> Next, the visitor stops by a coat room, where they might hang their coat (another middleware). Here, the middleware might perform a specific task, like checking if the visitor has a special pass (for example, verifying if the user is logged in). After this, the visitor continues their journey.</p>
+
+<p><strong>Visitor Reaches the Host:</strong> Finally, the visitor arrives at the host (the final route handler), who asks, “What can I do for you?” The host then provides whatever the visitor requested (sends the response).</p>
+
+<h3>Example in Code</h3>
+
+<pre>
+<code>
+const express = require('express');
+const app = express();
+
+// First middleware: Security Check
+app.use((req, res, next) => {
+  console.log('Security: Checked the request details.');
+  next(); // Let the visitor move to the next step
+});
+
+// Second middleware: Coat Room
+app.use((req, res, next) => {
+  console.log('Coat Room: Checking for a special pass.');
+  // Here you might check if the user is logged in, for example
+  next(); // Let the visitor move to the host
+});
+
+// Host: Final destination where the visitor gets a response
+app.get('/', (req, res) => {
+  res.send('Welcome to the house!');
+});
+
+// Start the server
+app.listen(3000, () => {
+  console.log('House is open on port 3000');
+});
+</code>
+</pre>
+
+<h3>Summary</h3>
+
+<p>In this analogy, <strong>middleware</strong> acts as a series of checkpoints (like the security check or coat room) that a visitor (the user's request) must pass through before reaching the host (where the server decides how to respond). Each middleware can perform crucial tasks, such as logging the request, verifying user credentials, or modifying the request.</p>
+
+<p>Finally, the <strong>host</strong> (route handler) sends the response, like welcoming the visitor into the house.</p>
+
+<h2>14. Explain Middleware?</h2>
