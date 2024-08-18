@@ -99,3 +99,12 @@ console.log('4');</code></pre>
 
 <p><strong>DELETE:</strong> Used to delete something.</p>
 <p>Example: Deleting a specific item.</p>
+
+<h2>13. Difference between local storage, session storage and cookies?</h2>
+<p><strong>Local Storage:</strong> Larger, long-term storage data that can not expire automatically.</p>
+<p>Good for storing data you want to keep around for a long time. <strong>Size Limit :</strong> 5-10 MB.</p>
+<p><strong>Session Storage:</strong> It is temporary stroage data but</p>
+<p>is deleted when the browser is closed. <strong>Size Limit :</strong> 5-10 MB.</p>
+<p><strong>Cookies:</strong> Cookies are small pieces of data that websites store on your computer or device when you visit them.</p>
+<p>They help the website remember information about you, like your login details, preferences, or what's in your shopping cart.</p>
+<p>his way, when you visit the website again, it can provide a more personalized experience without asking for the same information every time. <strong>Size Limit :</strong> 4 kb. </p>
