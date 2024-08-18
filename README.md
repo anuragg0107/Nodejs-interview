@@ -161,4 +161,62 @@ app.listen(3000, () => {
 
 <p>Finally, the <strong>host</strong> (route handler) sends the response, like welcoming the visitor into the house.</p>
 
-<h2>14. Explain Middleware?</h2>
+<h3>14. Explain HTTP Headers?</h3>
+
+<p>HTTP headers are like a note or tag attached to a message that help your computer and a server to understand each other better when they communicate.</p>
+
+<p><strong>In an API :</strong></p>
+
+<p>When your phone or computer sends a request to server:</p>
+
+<ul>
+  <li><strong>Content-Type :</strong> This tells the server which kind of request you're sending. For example, it is in JSON format or anything.</li>
+  <li><strong>Authorization :</strong> This is like showing your ID to the server. For example, showing an access token to see the information.</li>
+  <li><strong>User-Agent :</strong> This is like telling the server what device you're using to send a request. For example, you are using Chrome, Safari, Firefox, Mozilla, or anything.</li>
+</ul>
+
+<h2>14. Explain HTTP Status Code?</h2>
+<h3>HTTP Status Codes</h3>
+
+<p>HTTP status codes are numbers that the server sends back to your computer or device after you make a request. Every codes say something.</p>
+<p>Here are some common HTTP status codes and what they mean:</p>
+
+<ul>
+
+<li><strong>100-199 Information Status:</strong>
+    <p><strong>What it Means:</strong> HTTP status codes in the 100-199 range are informational responses.These codes are mainly used to provide interim responses before the final status code is sent</p>
+    <p><strong>Example:</strong> Go ahead, I’m ready for the rest of the request.</p>
+  </li>
+
+  <li><strong>200 OK:</strong>
+    <p><strong>What it Means:</strong> Everything went fine. The server received your request, processed it, and is sending back the information you asked for.</p>
+    <p><strong>Example:</strong> You visit a website, and it loads correctly. The server responds with 200 OK.</p>
+  </li>
+
+  <li><strong>404 Not Found:</strong>
+    <p><strong>What it Means:</strong> The server couldn’t find what you were looking for. Maybe the page doesn’t exist or the URL was typed incorrectly.</p>
+    <p><strong>Example:</strong> You click on a broken link, and the server responds with 404 Not Found.</p>
+  </li>
+
+  <li><strong>500 Internal Server Error:</strong>
+    <p><strong>What it Means:</strong> Something went wrong on the server’s side. It’s like the pizza shop telling you that their oven broke, so they can’t make your pizza.</p>
+    <p><strong>Example:</strong> You try to load a page, but there’s a problem with the server, so it responds with 500 Internal Server Error.</p>
+  </li>
+
+  <li><strong>301 Moved Permanently:</strong>
+    <p><strong>What it Means:</strong> The page you’re looking for has been moved to a new address. The server is telling your browser to go to the new location.</p>
+    <p><strong>Example:</strong> You try to visit an old website, but it has a new URL. The server responds with 301 Moved Permanently and redirects you to the new URL.</p>
+  </li>
+
+</ul>
+
+<h4>Summary</h4>
+<p>HTTP Status Codes are like messages from the server that tell you what happened when you made a request.</p>
+<ul>
+  <li>2xx Codes mean everything went well.</li>
+  <li>3xx Codes mean you’re being redirected somewhere else.</li>
+  <li>4xx Codes mean there was a problem with your request.</li>
+  <li>5xx Codes mean something went wrong on the server’s end.</li>
+</ul>
+
+<h2>15. </h2>

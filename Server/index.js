@@ -6,7 +6,7 @@ const app = express();
 
 // with express js
 app.get('/',(req,res)=>{
-  res.send("Hello from home page")
+  res.send("Hello from home page ds")
 })
 
 app.get('/about',(req,res)=>{
